@@ -83,17 +83,48 @@
     margin: 10px;
 }
 
+/* ------브랜드페이지 내 대괄호------ */
+
 .mypoint{
-    text-align: center;
-    margin-top: 100px;
-    padding-top: 22px;;
-    height: 10%;
-    width: 100%;
-    background-color: blueviolet;
-    font-size: 20px;
-    color: bisque;
     font-family: 'BMHANNAPro';
+    text-align: center;
+    color: #D1A0F9;
+    position: relative;
+    margin: 10% auto 10px;
+    width: 100%;
+    padding: 15px 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 100px;
 }
+
+.mypoint::before,
+.mypoint::after{
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 20px;
+    height: 50px;
+    border-top: 1.2px solid #E9D4FB;
+    border-bottom: 1.2px solid #E9D4FB;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mypoint::before{
+    margin-left: 30%;
+    left: 0;
+    border-left: 1.2px solid #E9D4FB;
+}
+
+.mypoint::after{
+    margin-right: 30%;
+    right: 0;
+    border-right: 1.2px solid #E9D4FB;
+}
+
+/* --------------- */
+
 
 .brnad_but{
     text-align: center;
@@ -354,16 +385,38 @@
 
 /* 결제완료창(point) */
 
-.point_article{
+.point_section{
     width: 100%;
-    height: 30%;
+    height: 70%;
     text-align: center;
+    margin-top: 150px;
 }
 
 .point{
-    width: 100%;
-    height: 100%;
-    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    margin: 10px 30%;
+}
+
+.point_h1{
+    font-family: 'BMHANNAPro';
+}
+
+.point_img{
+    margin: 20px;
+}
+
+.point_button{
+    font-size: 20px;
+    font-family: 'BMHANNAPro';
+    background-color: #D1A0F9;
+    margin: 10px;
+    padding: 4px;
+}
+
+.point_a{
+    color: white;
 }
 
 /* 마이페이지 */

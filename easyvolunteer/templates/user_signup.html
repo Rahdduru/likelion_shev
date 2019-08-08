@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% load staticfiles%}
+{% block content %}
+
+<section class="page-section" id="services">
+  <div class="container">
+    <h2 class="text-center mt-0">USER SIGN UP</h2>
+    <hr class="divider my-4">
+    <div class="user_signup_form">
+      <!-- 일반 회원가입 입력 창 -->
+      <form method="post" action="">
+        {% csrf_token %}
+        {{form.as_p}}
+        <a role="button" type="submit" class="btn btn-primary btn-xl js-scroll-trigger" id="user_signup_button"
+          href="#">회원가입</a><!-- 회원가입 버튼 -->
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

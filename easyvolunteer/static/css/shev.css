@@ -242,9 +242,6 @@
 
 }
 
-/*-------------------------------------------다혜------------------------------------------------------*/
-/* 메인_소개 */
-
 .about{
     width: 100%;
     height: 160px;
@@ -333,9 +330,62 @@
 
 /* 개인정보수정 */
 
-.modify_button{
-    text-align: right;
+.modify_section{
+    margin-top: 80px;
+    padding: 0 5% 0;
+    font-family: 'BMHANNAPro';
+    width: 100%;
+    height: 100%;
 }
+
+.modify_nav{
+    text-align: right;
+    position: relative;
+    bottom: -40px;
+    margin-right: 1%;
+}
+
+.modify_a1{
+    color: #111111;
+}
+
+.modify_a2{
+    color: #8e44ad;
+}
+
+.modify_content{
+    border: 2px solid rgba(132, 18, 240, 0.2);
+    border-radius: 5px;
+    position: relative;
+    height: 300px;
+}
+
+.modify_h1{
+    text-align: center;
+    color: white;
+    font-family: 'BMHANNAPro';
+    background-color: rgb(201, 143, 255);
+    font-size: 30px;
+    position: relative; z-index: 2;
+    margin: 0 80% 0 3%;
+    padding: 0.5%;
+    bottom: -21px;
+    border-radius: 5px;
+}
+
+.mod_button{
+    text-align: right;
+    margin: 10px 1%;
+}
+
+.mod_button_a{
+    font-size: 20px;
+    color: #D1A0F9;
+    padding: 0.3%;
+    border: solid 1.5px #ceb6e9;
+    border-radius: 4px;
+}
+
 /* 나의현황 */
 
 .situation_section{
@@ -348,22 +398,41 @@
     grid-template-columns: 50% 50%;
 }
 
+.situation_hr1{
+    border: solid 
+}
+
+.situation_a1{
+    color: #111111;
+}
+
+.situation_a2{
+    color: #8e44ad;
+}
+
 .sit_profile{
     margin: 10px;
 }
 
 .myprofile{
-    border: 1px solid rgba(0, 0, 0, 0.123);
+    border: 2px solid rgba(132, 18, 240, 0.2);
+    border-radius: 5px;
     position: relative;
     height: 300px;
+    /* height 백이랑 합칠 때 100%로 바꾸기 */
 }
 
-.sit_mypro_h1{
+.sit_h1{
+    text-align: center;
+    color: white;
     font-family: 'BMHANNAPro';
-    color: #111111;
+    background-color: rgb(201, 143, 255);
     font-size: 30px;
     position: relative; z-index: 2;
-    bottom: -20px;
+    bottom: -24px;
+    margin: 0 50px 0;
+    padding: 1.5%;
+    border-radius: 5px;
 }
 
 .sit_action{
@@ -371,16 +440,11 @@
 }
 
 .sit_act{
-    border: 1px solid rgba(0, 0, 0, 0.123);
+    border: 2px solid rgba(149, 35, 255, 0.2);
+    border-radius: 5px;
     position: relative;
     height: 300px;
-}
-
-.sit_mypro_h2{
-    color: blueviolet;
-    font-size: 30px;
-    position: relative; z-index: 2;
-    bottom: -20px;
+    /* height 백이랑 합칠 때 100%로 바꾸기 */
 }
 
 /* 결제완료창(point) */
@@ -403,6 +467,10 @@
     font-family: 'BMHANNAPro';
 }
 
+.point_h1_a{
+    color: #8e44ad;
+}
+
 .point_img{
     margin: 20px;
 }
@@ -410,13 +478,15 @@
 .point_button{
     font-size: 20px;
     font-family: 'BMHANNAPro';
-    background-color: #D1A0F9;
+    border: solid 2.5px rgb(0, 0, 0);
+    border-radius: 5px;
     margin: 10px;
     padding: 4px;
 }
 
 .point_a{
-    color: white;
+    color: rgb(0, 0, 0);
+    font-family: 'BMHANNAPro';
 }
 
 /* 마이페이지 */
@@ -466,6 +536,57 @@
 }
 
 .mypgae_p1{
+    text-align: center;
+    color: #ceb6e9;
+}
+
+/* 기관 마이페이지 */
+
+.organ_mypage_section{
+    margin-top: 100px;
+}
+
+.organ_mypage_h1{
+    font-family: 'BMHANNAPro';
+}
+
+.organ_mypage{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-family: 'BMHANNAPro';
+    margin: 30px 10px;
+}
+
+.organ_mypage_content{
+    border: 1px solid #111111;
+    padding: 10px;
+}
+
+.organ_mypage_div{
+    text-align: center;
+}
+
+.organ_mypage_but{
+    margin-top: 30px;
+    text-align: center
+}
+
+.organ_minimg{
+    text-align: center;
+    width: 105px;
+    height: 105px;
+    background-color: rgba(255, 255, 255, .99);
+}
+
+.organ_mypage_h3{
+    margin: 30px 0 0;
+    text-align: center;
+    font-family: 'BMHANNAPro';
+    width: 100%;
+    height: 50px;
+}
+
+.organ_mypgae_p1{
     text-align: center;
     color: #ceb6e9;
 }
